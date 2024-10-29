@@ -4,7 +4,7 @@ export function FocusCardsDemo() {
   const cards = [
     {
       title: "Terimakasih",
-      src: "/arakarakan1.jpg",
+      src: "/arakarakan1.JPG",
     },
     {
       title: "Sudah",

@@ -4,6 +4,9 @@ import Sambutan from "../components/Sambutan";
 import Image from "next/image";
 import { HeroScrollDemo } from "@/components/HeroScrollDemo";
 import { FocusCardsDemo } from "@/components/FocusCardsDemo";
+import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
+import { SVGMaskEffectDemo } from "@/components/SVGMaskEffectDemo";
+import { HyperTextDemo } from "@/components/HyperTextDemo";
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
       <TextRevealDemo />
       <HeroScrollDemo />
       <FocusCardsDemo />
+      <InfiniteMovingCardsDemo />
+      <SVGMaskEffectDemo />
+      <HyperTextDemo />
     </main>
   );
 }
