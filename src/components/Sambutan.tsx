@@ -18,19 +18,19 @@ export const products = [
     id: 1,
     title: "Local Image 1",
     link: "https://example.com",
-    thumbnail: "/image1.jpg", // Gambar lokal dari folder public/images
+    thumbnail: "/image1.JPG", // Gambar lokal dari folder public/images
   },
   {
     id: 2,
     title: "Local Image 2",
     link: "https://example.com",
-    thumbnail: "/image2.jpg", // Gambar lokal dari folder public/images
+    thumbnail: "/image2.JPG", // Gambar lokal dari folder public/images
   },
   {
     id: 3,
     title: "Local Image 3",
     link: "https://example.com",
-    thumbnail: "/image3.jpg", // Gambar lokal dari folder public/images
+    thumbnail: "/image3.JPG", // Gambar lokal dari folder public/images
   },
   {
     id: 4,
