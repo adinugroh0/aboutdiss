@@ -1,3 +1,4 @@
+import { TextRevealDemo } from "@/components/TextRevealDemo";
 import HeroVideoDialogDemo from "../components/HeroVideoDialogDemo";
 import Sambutan from "../components/Sambutan";
 import Image from "next/image";
@@ -9,6 +10,7 @@ export default function Home() {
     ">
       <Sambutan />
       <HeroVideoDialogDemo />
+      <TextRevealDemo />
     </main>
   );
 }
