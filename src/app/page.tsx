@@ -2,6 +2,8 @@ import { TextRevealDemo } from "@/components/TextRevealDemo";
 import HeroVideoDialogDemo from "../components/HeroVideoDialogDemo";
 import Sambutan from "../components/Sambutan";
 import Image from "next/image";
+import { HeroScrollDemo } from "@/components/HeroScrollDemo";
+import { FocusCardsDemo } from "@/components/FocusCardsDemo";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <Sambutan />
       <HeroVideoDialogDemo />
       <TextRevealDemo />
+      <HeroScrollDemo />
+      <FocusCardsDemo />
     </main>
   );
 }
