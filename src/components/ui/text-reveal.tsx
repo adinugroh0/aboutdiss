@@ -25,12 +25,12 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
     <div ref={targetRef} className={cn("relative z-0 h-[200vh]", className)}>
       <div
         className={
-          "sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-[1rem] py-[5rem]"
+          "sticky top-0 mx-auto flex h-[50%]  items-center bg-transparent "
         }>
         <p
           ref={targetRef}
           className={
-            "flex flex-wrap p-5   text-white/20 md:p-8 md:text-3xl lg:p-10  text-center"
+            "flex flex-wrap p-5 max-w-5xl  text-white/20  text-lg  items-center justify-center"
           }>
           {words.map((word, i) => {
             const start = i / words.length;
