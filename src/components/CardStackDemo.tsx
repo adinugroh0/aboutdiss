@@ -32,7 +32,7 @@ const CARDS = [
   {
     id: 0,
     name: "Anu",
-    designation: "6 November 2024",
+    designation: "5 November 2024",
     content: (
       <p>
         Aku tidak tau kapan terahir kamu lihat web ini{" "}
