@@ -20,7 +20,7 @@ export const CardStack = ({
   offset?: number;
   scaleFactor?: number;
 }) => {
-  const CARD_OFFSET = offset || 10;
+  const CARD_OFFSET = offset || 20;
   const SCALE_FACTOR = scaleFactor || 0.06;
   const [cards, setCards] = useState<Card[]>(items);
 
@@ -36,7 +36,7 @@ export const CardStack = ({
         newArray.unshift(newArray.pop()!); // move the last element to the front
         return newArray;
       });
-    }, 5000);
+    }, 8000);
   };
 
   return (
@@ -53,8 +53,7 @@ export const CardStack = ({
               top: index * -CARD_OFFSET,
               scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
-            }}
-          >
+            }}>
             <div className="font-normal text-neutral-700 dark:text-neutral-200">
               {card.content}
             </div>

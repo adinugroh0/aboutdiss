@@ -1,9 +1,12 @@
 "use client";
 import { CardStack } from "./ui/card-stack";
 import { cn } from "@/lib/utils";
+
 export function CardStackDemo() {
   return (
-    <div className="h-[40rem] flex items-center justify-center w-full">
+    <div className="h-[40rem] flex flex-col items-center justify-center w-full gap-6">
+      {/* Judul Overthinking di atas semua kartu */}
+      <h1 className="text-2xl font-bold mb-4 text-white">Overthinking</h1>
       <CardStack items={CARDS} />
     </div>
   );
@@ -35,16 +38,16 @@ const CARDS = [
     designation: "5 November 2024",
     content: (
       <p>
-        Aku tidak tau kapan terahir kamu lihat web ini{" "}
+        Aku tidak tau kapan terakhir kamu lihat web ini{" "}
         <Highlight>Mungkin hanya waktu pertama aku kirim link</Highlight> Dan
-        saat ini aku mulai merasa kalau bukan aku orang kamu mau
+        saat ini aku mulai merasa kalau bukan aku orang yang kamu mau
       </p>
     ),
   },
   {
     id: 1,
     name: "Anu",
-    designation: "5 Novembaer 2024",
+    designation: "5 November 2024",
     content: (
       <p>
         Mungkin jika momen <Highlight>Pantai</Highlight> tiba itu mungkin akan
@@ -60,10 +63,12 @@ const CARDS = [
     content: (
       <p>
         Oh ya aku ingat kamu pernah bilang kepadaku kalau aku menerimamu karena
-        <Highlight> Aku Kasihan padamu</Highlight> dan kamu salah , sepertinya
+        <Highlight> Aku Kasihan padamu</Highlight> dan kamu salah, sepertinya
         <Highlight> kamu Kasihan padaku</Highlight> entah hanya perasaanku atau
-        memamng benar begitu.
+        memang benar begitu.
       </p>
     ),
   },
 ];
+
+export default CardStackDemo;
