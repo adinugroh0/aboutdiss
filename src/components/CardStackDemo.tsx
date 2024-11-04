@@ -59,9 +59,8 @@ const CARDS = [
     designation: "5 November 2024",
     content: (
       <p>
-        Oh ya aku ingat kamu pernah bilang kepadaku kalu aku menerimamu karena
-        <Highlight> Aku Kasihan padamu</Highlight> dan sepertinya kamu salah ,
-        sepertinya
+        Oh ya aku ingat kamu pernah bilang kepadaku kalau aku menerimamu karena
+        <Highlight> Aku Kasihan padamu</Highlight> dan kamu salah , sepertinya
         <Highlight> kamu Kasihan padaku</Highlight> entah hanya perasaanku atau
         memamng benar begitu.
       </p>
