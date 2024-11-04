@@ -8,6 +8,7 @@ import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
 import { SVGMaskEffectDemo } from "@/components/SVGMaskEffectDemo";
 import { HyperTextDemo } from "@/components/HyperTextDemo";
 import { BoxRevealDemo } from "@/components/BoxRevealDemo";
+import { CardStackDemo } from "@/components/CardStackDemo";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <InfiniteMovingCardsDemo />
       <SVGMaskEffectDemo />
       <BoxRevealDemo />
+      <CardStackDemo />
       <HyperTextDemo />
     </main>
   );
