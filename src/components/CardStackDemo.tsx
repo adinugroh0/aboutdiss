@@ -34,7 +34,7 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Anu",
+    name: ".",
     designation: "5 November 2024",
     content: (
       <p>
@@ -46,19 +46,20 @@ const CARDS = [
   },
   {
     id: 1,
-    name: "Anu",
+    name: ".",
     designation: "5 November 2024",
     content: (
       <p>
-        Mungkin jika momen <Highlight>Pantai</Highlight> tiba itu mungkin akan
-        menjadi momen <Highlight>Penentu untuk semuanya</Highlight> dan itu akan
-        menjadi momen of truee.
+        Aku akan mengungkapkan <Highlight>Semua</Highlight> dan jika itu
+        terjadimungkin akan menjadi momen{" "}
+        <Highlight>Penentu untuk semuanya</Highlight> dan itu akan menjadi momen
+        of truee.
       </p>
     ),
   },
   {
     id: 2,
-    name: "Anu",
+    name: ".",
     designation: "5 November 2024",
     content: (
       <p>
