@@ -9,6 +9,13 @@ import { SVGMaskEffectDemo } from "@/components/SVGMaskEffectDemo";
 import { HyperTextDemo } from "@/components/HyperTextDemo";
 import { BoxRevealDemo } from "@/components/BoxRevealDemo";
 import { CardStackDemo } from "@/components/CardStackDemo";
+import {
+  StickyScrollDemo,
+  StickyScrollRevealDemo,
+} from "@/components/StickyScrollDemo";
+import NewsList from "@/components/NewsList";
+import Create from "@/components/Create";
+import { Iklas } from "@/components/Iklas";
 
 export default function Home() {
   return (
@@ -24,6 +31,9 @@ export default function Home() {
       <SVGMaskEffectDemo />
       <BoxRevealDemo />
       <CardStackDemo />
+      <Iklas />
+      <Create />
+      <NewsList />
       <HyperTextDemo />
     </main>
   );
