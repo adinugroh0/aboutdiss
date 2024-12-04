@@ -9,10 +9,10 @@ export function Iklas() {
       <div className="flex flex-col items-center justify-center text-center ">
         <div>
           <p className="text-white text-sm md:text-base lg:text-lg px-6 md:px-24">
-            "Maaf untuk sekian banyak karena web ini menjadi tempat aku
+            &quot;Maaf untuk sekian banyak karena web ini menjadi tempat aku
             mengeluh, untuk saat ini aku hanya bisa menunggu jawaban darimu,
             apapun jawaban yang kamu berikan akanku terima apapun itu baik atau
-            buruk."
+            buruk. &quot;
           </p>
         </div>
         <div className="w-24 h-24 md:w-32 md:h-32">
