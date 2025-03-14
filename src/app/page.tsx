@@ -16,6 +16,8 @@ import {
 import NewsList from "@/components/NewsList";
 import Create from "@/components/Create";
 import { Iklas } from "@/components/Iklas";
+import Calender from "@/components/Calender";
+import CountdownRomantic from "@/components/CountdownRomantic";
 
 export default function Home() {
   return (
@@ -35,6 +37,8 @@ export default function Home() {
       <Create />
       <NewsList />
       <HyperTextDemo />
+      <CountdownRomantic />
+      <Calender />
     </main>
   );
 }
