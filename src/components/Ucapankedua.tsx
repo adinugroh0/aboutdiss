@@ -13,8 +13,8 @@ const Card = () => {
         </div>
         <h1>KLIK </h1>
         <p>
-          '&quot;maaf ya kalo aku sering buat kamu badmood akhir-akhir ini
-          hehehe, bukan karena tidak percaya tapi aku takut😊'&quot;
+          maaf ya kalo aku sering buat kamu badmood akhir-akhir ini hehehe,
+          bukan karena tidak percaya tapi aku takut😊
         </p>
       </div>
     </StyledWrapper>

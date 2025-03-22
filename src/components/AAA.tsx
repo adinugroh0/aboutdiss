@@ -2,17 +2,15 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import Link from "next/link";
 
 const Card = () => {
   return (
     <StyledWrapper>
       <div className="book">
         <p>
-          `&quot;`Mungkin banyak yang akan memberimu ucapan hari ini dan aku
-          salah satunya ,selamat ulang tahun septia murmafikoh '&quot;anu'&quot;
-          berharap yang terbaik untukmu bukan hanya hari ini tapi setiap
-          hari,❤️'&quot;
+          Mungkin banyak yang akan memberimu ucapan hari ini dan aku salah
+          satunya ,selamat ulang tahun septia murmafikoh anu berharap yang
+          terbaik untukmu bukan hanya hari ini tapi setiap hari,❤️
         </p>
         <div className="cover">
           <Image
