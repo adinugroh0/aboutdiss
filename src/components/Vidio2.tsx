@@ -7,14 +7,14 @@ export function Vidio2() {
       <HeroVideoDialog
         className="dark:hidden block"
         animationStyle="from-center"
-        videoSrc="Vidio2.mp4"
+        videoSrc="vidio2.mp4"
         thumbnailSrc="/ABOUT.png"
         thumbnailAlt="Hero Video"
       />
       <HeroVideoDialog
         className="hidden dark:block"
         animationStyle="from-center"
-        videoSrc="/Vidio2.mp4"
+        videoSrc="/vidio2.mp4"
         thumbnailSrc="/ABOUT.png"
         thumbnailAlt="Hero Video"
       />
