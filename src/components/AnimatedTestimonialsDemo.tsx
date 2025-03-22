@@ -4,26 +4,26 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "Jaga kesehatan dan semangatmu ya, semoga setiap hari harimu diisi dengan kebahagiaan kecil yang membuatmulmerasa bersyukur dan tersenyum. Aku mungkin ga selalu bisa menemanimu, tapi dukunganku untukmu ngga pernah hilang.teruslah berjalan dengan percaya diri, percayalah ada banyak hal baik yang menunggumu di depan dan aku selalu yakin kamu bisa melewati setiap tantangan dengan kuat",
+        "Jaga kesehatan dan semangatmu ya. Semoga setiap harimu diisi dengan kebahagiaan kecil yang membuatmu merasa bersyukur dan tersenyum.\n\nAku mungkin nggak selalu bisa menemanimu, tapi dukunganku untukmu nggak pernah hilang.\n\nTeruslah berjalan dengan percaya diri. Percayalah, ada banyak hal baik yang menunggumu di depan. Dan aku selalu yakin kamu bisa melewati setiap tantangan dengan kuat.",
       name: "Amel",
-      designation: "ucapan dari teman satu kamarmu",
+      designation: "Ucapan dari teman satu kamarmu",
       src: "/human.png",
     },
     {
       quote:
-        "Cie cieeee yang ulang tahunn. aku mau ngucapin banyak banyak makasih buat kamu. karna kamu sampai sejauh ini masih mau nemenin aku buat jadi bendahara. kamu ngertiin aku banget kalo aku lagi ada urusan. tapiiii aku mau bilang lain kali kalo susah atau repot jangan sendirian ajak aku jugaa. utamain diri kamu sep jangan begadang buar RAB sampe subuh. kamu yang utama rab mah bisa nunggu. sehatt terus okeyy kalo sakit bilabg nanti aku gantiin kamu.makin gede harus bisa utamain diri sendiri sep. makasih juga mau slalu aku repotin karna tidur di kos kamu mulu. makasih mau nemenin aku karna aku ga bisa sendiri. Oh iyaa aku suka kerumah kamu. seruuu polll bapa sama ibu kamu baik banget. keluarga kamu cemara abiezzz. orang lain liat pasti iri sihhh. kamu harus bersyukur sepp. doa nya aku ikutin kamu yang katane mau pulang 2027 kan yananti kalo dah lulus aku mau main ke kamuuu",
+        "Cie cieeee yang ulang tahun. Aku mau ngucapin banyak banyak makasih buat kamu. Karena kamu sampai sejauh ini masih mau nemenin aku buat jadi bendahara. Kamu ngertiin aku banget kalo aku lagi ada urusan.\n\nTapi aku mau bilang, lain kali kalo susah atau repot jangan sendirian, ajak aku juga. Utamain diri kamu, Sep. Jangan begadang buat RAB sampai subuh. Kamu yang utama, RAB mah bisa nunggu.\n\nSehat terus okeyy, kalo sakit bilang, nanti aku gantiin kamu. Makin gede harus bisa utamain diri sendiri, Sep. Makasih juga udah selalu aku repotin karena tidur di kos kamu mulu. Makasih nemenin aku karena aku nggak bisa sendiri.\n\nOh iya, aku suka ke rumah kamu. Seruuu polll, Bapak sama Ibu kamu baik banget. Keluarga kamu cemara abiezzz. Orang lain lihat pasti iri sih. Kamu harus bersyukur, Sep. Doanya aku ikutin: kamu kan katanya mau pulang 2027 kan ya? Nanti kalo udah lulus, aku mau main ke kamu.",
       name: "Meli",
-      designation: "Ucapan dari melia teman bendaharamu",
+      designation: "Ucapan dari Melia, teman bendaharamu",
       src: "/human.png",
     },
-
     {
       quote:
-        "Sebenernya masih banyak yang aku minta dari teman teman mu tapi tidak di kasi hehehe",
-      name: "Teman Teman mu",
+        "Sebenernya masih banyak yang aku minta dari teman-temanmu tapi tidak dikasih. Hehehe.",
+      name: "Teman-temanmu",
       designation: "Ucapan",
       src: "/human.png",
     },
   ];
+
   return <AnimatedTestimonials testimonials={testimonials} />;
 }
