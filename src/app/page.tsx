@@ -16,8 +16,11 @@ import {
 import NewsList from "@/components/NewsList";
 import Create from "@/components/Create";
 import { Iklas } from "@/components/Iklas";
-import Calender from "@/components/Calender";
-import CountdownRomantic from "@/components/CountdownRomantic";
+import Ucapankedua from "@/components/Ucapankedua";
+import Vidio2 from "@/components/Vidio2";
+import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
+import AAA from "@/components/AAA";
+import Chepter2 from "@/components/Chepter2";
 
 export default function Home() {
   return (
@@ -37,8 +40,15 @@ export default function Home() {
       <Create />
       <NewsList />
       <HyperTextDemo />
-      <CountdownRomantic />
-      <Calender />
+      <Vidio2 />
+      <p className=" flex text-white justify-center items-center">
+        {" "}
+        klik untuk membuaka ucapan
+      </p>
+      <AAA />
+      <AnimatedTestimonialsDemo />
+      <Ucapankedua />
+      <Chepter2 />
     </main>
   );
 }
