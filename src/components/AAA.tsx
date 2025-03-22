@@ -9,7 +9,6 @@ const Card = () => {
     <StyledWrapper>
       <div className="book">
         <p>
-          {" "}
           "Mungkin banyak yang akan memberimu ucapan hari ini dan aku salah
           satunya ,selamat ulang tahun septia murmafikoh "anu" berharap yang
           terbaik untukmu bukan hanya hari ini tapi setiap hari,❤️"

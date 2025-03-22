@@ -100,14 +100,14 @@ export const AnimatedTestimonials = ({
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}>
-            <h3 className="text-2xl font-bold text-black dark:text-white">
+            <h3 className="text-2xl font-bold text-white dark:text-white">
               {testimonials[active].name}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
 
-            <div className="mt-8 space-y-4 text-lg text-gray-500 dark:text-neutral-300">
+            <div className="mt-8 space-y-4 text-lg text-white dark:text-neutral-300">
               {testimonials[active].quote
                 .split("\n\n")
                 .map((paragraph, idx) => (
