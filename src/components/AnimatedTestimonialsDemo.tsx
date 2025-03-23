@@ -18,6 +18,13 @@ export function AnimatedTestimonialsDemo() {
     },
     {
       quote:
+        "hii sep!!selamat ulangtahun, semoga panjang umur, sehat selalu, lancar rezekinya, dipermudah segala urusan, semoga semua impianmu terwujud dan semoga sekecil apapun harapanmu bisa terwujud. sekali lagi selamat bertambah usia seppp semoga semuaa hal baik selalu menyertaimu lov uuu💗💗🤩🤩🫰🏻🫰🏻🫰🏻🫰🏻🫰🏻🫰🏻🫰🏻🫰🏻🫰🏻🫰🏻.",
+      name: "elvin",
+      designation: "ucapan dari temanmu",
+      src: "/human.png",
+    },
+    {
+      quote:
         "Sebenernya masih banyak yang aku minta dari teman-temanmu tapi tidak dikasih. Hehehe.",
       name: "Teman-temanmu",
       designation: "Ucapan",
