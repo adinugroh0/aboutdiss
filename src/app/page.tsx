@@ -21,6 +21,7 @@ import Vidio2 from "@/components/Vidio2";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
 import AAA from "@/components/AAA";
 import Chepter2 from "@/components/Chepter2";
+import ThreeDMarqueeDemo from "@/components/ThreeDMarqueeDemo";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       <AnimatedTestimonialsDemo />
       <Ucapankedua />
       <Chepter2 />
+      <ThreeDMarqueeDemo />
     </main>
   );
 }
