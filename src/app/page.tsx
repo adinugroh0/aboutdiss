@@ -50,6 +50,10 @@ export default function Home() {
       <AnimatedTestimonialsDemo />
       <Ucapankedua />
       <Chepter2 />
+      <p className=" flex text-white justify-center items-center">
+        {" "}
+        buat Zoom pada layar 80%
+      </p>
       <ThreeDMarqueeDemo />
     </main>
   );
