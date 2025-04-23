@@ -22,6 +22,7 @@ import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo"
 import AAA from "@/components/AAA";
 import Chepter2 from "@/components/Chepter2";
 import ThreeDMarqueeDemo from "@/components/ThreeDMarqueeDemo";
+import Bukanmalu from "@/components/Bukanmalu";
 
 export default function Home() {
   return (
@@ -55,6 +56,7 @@ export default function Home() {
         buat Zoom pada layar 80%
       </p>
       <ThreeDMarqueeDemo />
+      <Bukanmalu />
     </main>
   );
 }
