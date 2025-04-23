@@ -16,19 +16,20 @@ export async function Bukanmalu() {
         <div className="  text-center text-white items-center justify-center ">
           <div>
             <p>
-              "aku tidak malu tapi aku malas melihat kamu tebarpesona disitu"
+              `&quot;`aku tidak malu tapi aku malas melihat kamu tebarpesona
+              disitu`&quot;`
             </p>
           </div>
           <div className="mt-5">
             <p>
-              "aku tidak akan melarangmu walupun aku tidak suka apa yang kamu
-              lakukan ,kenapa? <br />
+              `&quot;`aku tidak akan melarangmu walupun aku tidak suka apa yang
+              kamu lakukan ,kenapa? <br />
               karena itu yang kamu suka lagi pula aku siapa? aku penting? apa
               kabarku penting?, tidak kan.
               <br />
               aku pikir status itu tidak penting tapi ternyata salah.
               <br />
-              kamu punya banyak waktu untuk semuanya tapi bukan aku. "
+              kamu punya banyak waktu untuk semuanya tapi bukan aku. `&quot;`
             </p>
           </div>
         </div>
