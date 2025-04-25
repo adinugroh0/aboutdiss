@@ -21,14 +21,15 @@ import Vidio2 from "@/components/Vidio2";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
 import AAA from "@/components/AAA";
 import Chepter2 from "@/components/Chepter2";
-import ThreeDMarqueeDemo from "@/components/ThreeDMarqueeDemo";
 import Bukanmalu from "@/components/Bukanmalu";
+import Kembali from "@/components/Kembali";
 
 export default function Home() {
   return (
     <main
       className="bg-black
     ">
+      <Kembali />
       <Sambutan />
       <HeroVideoDialogDemo />
       <TextRevealDemo />
@@ -51,11 +52,7 @@ export default function Home() {
       <AnimatedTestimonialsDemo />
       <Ucapankedua />
       <Chepter2 />
-      <p className=" flex text-white justify-center items-center">
-        {" "}
-        buat Zoom pada layar 80%
-      </p>
-      <ThreeDMarqueeDemo />
+
       <Bukanmalu />
     </main>
   );
