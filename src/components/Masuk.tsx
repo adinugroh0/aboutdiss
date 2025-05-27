@@ -28,28 +28,18 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="relative h-screen w-full flex flex-col md:flex-row">
-      {/* Gambar background untuk mobile dengan efek blur */}
-      <div className="absolute inset-0 md:hidden -z-10 overflow-hidden">
+    <main className="flex flex-col md:flex-row h-screen">
+      {/* Gambar */}
+      <div className="relative w-full md:w-1/2 h-64 md:h-full">
         <Image
           src="/login.png"
-          alt="Background Mobile"
+          alt="Gambar Login"
           fill
-          className="object-cover  brightness-75"
-          priority
+          className="object-cover"
         />
       </div>
 
       {/* Gambar samping untuk desktop */}
-      <div className="hidden md:block w-1/2 h-full relative">
-        <Image
-          src="/login.png"
-          alt="Gambar Login Desktop"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
 
       {/* Form login */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-8">
