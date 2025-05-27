@@ -23,37 +23,14 @@ import AAA from "@/components/AAA";
 import Chepter2 from "@/components/Chepter2";
 import Bukanmalu from "@/components/Bukanmalu";
 import Kembali from "@/components/Kembali";
+import Masuk from "@/components/Masuk";
 
 export default function Home() {
   return (
     <main
       className="bg-black
     ">
-      <Kembali />
-      <Sambutan />
-      <HeroVideoDialogDemo />
-      <TextRevealDemo />
-      <HeroScrollDemo />
-      <FocusCardsDemo />
-      <InfiniteMovingCardsDemo />
-      <SVGMaskEffectDemo />
-      <BoxRevealDemo />
-      <CardStackDemo />
-      <Iklas />
-      <Create />
-      <NewsList />
-      <HyperTextDemo />
-      <Vidio2 />
-      <p className=" flex text-white justify-center items-center">
-        {" "}
-        klik untuk membuaka ucapan
-      </p>
-      <AAA />
-      <AnimatedTestimonialsDemo />
-      <Ucapankedua />
-      <Chepter2 />
-
-      <Bukanmalu />
+      <Masuk />
     </main>
   );
 }
