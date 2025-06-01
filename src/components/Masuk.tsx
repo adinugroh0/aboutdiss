@@ -12,7 +12,7 @@ export default function LoginPage() {
     e.preventDefault();
 
     if (!name.trim()) {
-      alert("Nama wajib diisi");
+      alert("aku siapa kamu?");
       return;
     }
 

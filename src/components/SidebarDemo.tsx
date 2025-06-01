@@ -13,6 +13,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Create from "./Create";
 import Delete from "./Delete";
+import Akusiapa from "./Akusiapa";
 
 export function SidebarDemo() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -20,7 +21,7 @@ export function SidebarDemo() {
 
   const links = [
     {
-      label: "Dashboard",
+      label: "Akses",
       value: "home",
       icon: (
         <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
@@ -29,6 +30,13 @@ export function SidebarDemo() {
     {
       label: "Upload",
       value: "Upload",
+      icon: (
+        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Dashboard",
+      value: "Dashboard",
       icon: (
         <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -45,9 +53,11 @@ export function SidebarDemo() {
   const renderPage = () => {
     switch (selectedPage) {
       case "home":
-        return <Delete />;
+        return <Akusiapa />;
       case "Upload":
         return <Create />;
+      case "Dashboard":
+        return <Delete />;
       default:
         return <h1>Page not found</h1>;
     }
