@@ -11,15 +11,37 @@ export default function LoginPage() {
   const handleLogin = async (e: React.FormEvent, tujuan: "baru" | "lama") => {
     e.preventDefault();
 
+    if (!name.trim()) {
+      alert("Nama wajib diisi");
+      return;
+    }
+
+    // Minta permission notifikasi kalau belum granted
+    if (Notification.permission === "default") {
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") {
+        alert("Mohon izinkan notifikasi agar bisa menerima pemberitahuan");
+        return;
+      }
+    }
+
+    // Kirim ke API login termasuk tujuan
     const res = await fetch("/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name }),
+      body: JSON.stringify({ name, tujuan }),
     });
 
     const data = await res.json();
 
     if (res.ok) {
+      // Tampilkan notifikasi browser kalau izin sudah granted
+      if (Notification.permission === "granted") {
+        new Notification("Login Berhasil", {
+          body: `Selamat datang, ${name}!`,
+          icon: "/login.png", // opsional, pakai ikon login kalau ada
+        });
+      }
       const target = tujuan === "baru" ? "/Halaman-Baru" : "/Halaman";
       router.push(`${target}?name=${encodeURIComponent(name)}`);
     } else {
@@ -36,10 +58,9 @@ export default function LoginPage() {
           alt="Gambar Login"
           fill
           className="object-cover"
+          priority
         />
       </div>
-
-      {/* Gambar samping untuk desktop */}
 
       {/* Form login */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-8">
