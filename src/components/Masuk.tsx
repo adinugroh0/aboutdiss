@@ -29,19 +29,7 @@ export default function LoginPage() {
 
   return (
     <main className="relative h-screen w-full flex flex-col md:flex-row bg-black">
-      {/* Gambar background untuk mobile */}
-      <div className="absolute inset-0 md:hidden -z-10">
-        <Image
-          src="/login.png"
-          alt="Background Mobile"
-          fill
-          className="object-cover opacity-20"
-          priority
-        />
-      </div>
-
-      {/* Gambar samping untuk desktop */}
-      <div className="hidden md:block w-1/2 h-full relative">
+      <div className=" md:block w-full h-full relative">
         <Image
           src="/login.png"
           alt="Gambar Login Desktop"
@@ -69,18 +57,24 @@ export default function LoginPage() {
             <button
               type="button"
               onClick={(e) => handleLogin(e, "lama")}
-              className="flex-1 bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
-              Web Lama
+              className="p-[3px] relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+              <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                Web Lama
+              </div>
             </button>
             <button
               type="button"
               onClick={(e) => handleLogin(e, "baru")}
-              className="flex-1 bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition">
-              Web Baru
+              className="p-[3px] relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+              <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                Web Baru
+              </div>
             </button>
           </div>
           <h1 className="text-2xl font-bold text-center">
-            kemarin masi eror ini di benerin hehehe
+            proses agak lama ya hehehe😊
           </h1>
         </form>
       </div>
