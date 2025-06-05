@@ -6,10 +6,7 @@ export async function POST(req: Request) {
     const { name } = await req.json();
 
     if (!name) {
-      return NextResponse.json(
-        { message: "Nama wajib diisi" },
-        { status: 400 }
-      );
+      return NextResponse.json({ message: "aku siapa? " }, { status: 400 });
     }
 
     // Simpan ke Supabase
