@@ -44,21 +44,20 @@ export default function LoginPage() {
         <form
           onSubmit={(e) => handleLogin(e, "lama")}
           className="flex flex-col gap-6 w-full max-w-md bg-white bg-opacity-90 p-6 rounded-md shadow-md">
-          <h1 className="text-2xl font-bold text-center">Haii tiaaa</h1>
+          <h1 className="text-2xl font-bold text-center">Haii tiaaa👋</h1>
           <input
             type="text"
-            placeholder="Siapa aku ?
-          "
+            placeholder="Siapa aku ?"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
             className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col justify-between sm:flex-row gap-4">
             <button
               type="button"
               onClick={(e) => handleLogin(e, "lama")}
-              className="p-[3px] relative">
+              className="p-[3px] w-full relative">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
               <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
                 Web Lama
@@ -67,7 +66,7 @@ export default function LoginPage() {
             <button
               type="button"
               onClick={(e) => handleLogin(e, "baru")}
-              className="p-[3px] relative">
+              className="p-[3px] w-full relative">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
               <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
                 Web Baru
@@ -75,7 +74,7 @@ export default function LoginPage() {
             </button>
           </div>
           <h1 className="text-2xl font-bold text-center">
-            proses agak lama ya hehehe😊
+            proses agak lama ya hehehe🫶
           </h1>
         </form>
       </div>
