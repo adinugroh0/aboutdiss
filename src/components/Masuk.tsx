@@ -11,30 +11,15 @@ export default function LoginPage() {
   const handleLogin = async (e: React.FormEvent, tujuan: "baru" | "lama") => {
     e.preventDefault();
 
-    if (!name.trim()) {
-      alert("aku siapa kamu?");
-      return;
-    }
-
-    // Minta permission notifikasi kalau belum granted
-
-    // Kirim ke API login termasuk tujuan
     const res = await fetch("/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, tujuan }),
+      body: JSON.stringify({ name }),
     });
 
     const data = await res.json();
 
     if (res.ok) {
-      // Tampilkan notifikasi browser kalau izin sudah granted
-      if (Notification.permission === "granted") {
-        new Notification("Login Berhasil", {
-          body: `Selamat datang, ${name}!`,
-          icon: "/login.png", // opsional, pakai ikon login kalau ada
-        });
-      }
       const target = tujuan === "baru" ? "/Halaman-Baru" : "/Halaman";
       router.push(`${target}?name=${encodeURIComponent(name)}`);
     } else {
@@ -43,12 +28,23 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="flex flex-col md:flex-row h-screen">
-      {/* Gambar */}
-      <div className="relative w-full md:w-1/2 h-64 md:h-full">
+    <main className="relative h-screen w-full flex flex-col md:flex-row bg-black">
+      {/* Gambar background untuk mobile */}
+      <div className="absolute inset-0 md:hidden -z-10">
         <Image
           src="/login.png"
-          alt="Gambar Login"
+          alt="Background Mobile"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+      </div>
+
+      {/* Gambar samping untuk desktop */}
+      <div className="hidden md:block w-1/2 h-full relative">
+        <Image
+          src="/login.png"
+          alt="Gambar Login Desktop"
           fill
           className="object-cover"
           priority
@@ -56,14 +52,14 @@ export default function LoginPage() {
       </div>
 
       {/* Form login */}
-      <div className="w-full md:w-1/2 flex items-center justify-center p-8">
+      <div className="w-full md:w-1/2 flex items-center justify-center p-8 bg-black bg-opacity-90 md:bg-opacity-100">
         <form
           onSubmit={(e) => handleLogin(e, "lama")}
-          className="flex flex-col gap-6 w-full max-w-md bg-white/80 p-6 rounded-md shadow-md backdrop-blur-sm">
-          <h1 className="text-2xl font-bold text-center">Hai tiaa</h1>
+          className="flex flex-col gap-6 w-full max-w-md bg-white bg-opacity-90 p-6 rounded-md shadow-md">
+          <h1 className="text-2xl font-bold text-center">Haii tiaaa</h1>
           <input
             type="text"
-            placeholder="Siapa aku?"
+            placeholder="Masukkan nama"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -73,16 +69,19 @@ export default function LoginPage() {
             <button
               type="button"
               onClick={(e) => handleLogin(e, "lama")}
-              className="flex-1 bg-transparent border border-blue-600 py-3 rounded-md hover:bg-blue-700 transition text-blue-600 hover:text-white">
+              className="flex-1 bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
               Web Lama
             </button>
             <button
               type="button"
               onClick={(e) => handleLogin(e, "baru")}
-              className="flex-1 bg-blue-600 text-white py-3 rounded-md hover:bg-transparent border border-blue-600 hover:text-blue-600 transition">
+              className="flex-1 bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition">
               Web Baru
             </button>
           </div>
+          <h1 className="text-2xl font-bold text-center">
+            kemarin masi eror ini di benerin hehehe
+          </h1>
         </form>
       </div>
     </main>
