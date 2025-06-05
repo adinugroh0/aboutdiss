@@ -74,7 +74,7 @@ export default function LoginPage() {
             </button>
           </div>
           <h1 className="text-2xl font-bold text-center">
-            proses agak lama ya hehehe🫶
+            proses agak lama ya hehehe 🫶
           </h1>
         </form>
       </div>
