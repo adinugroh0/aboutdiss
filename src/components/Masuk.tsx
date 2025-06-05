@@ -17,13 +17,6 @@ export default function LoginPage() {
     }
 
     // Minta permission notifikasi kalau belum granted
-    if (Notification.permission === "default") {
-      const permission = await Notification.requestPermission();
-      if (permission !== "granted") {
-        alert("Mohon izinkan notifikasi agar bisa menerima pemberitahuan");
-        return;
-      }
-    }
 
     // Kirim ke API login termasuk tujuan
     const res = await fetch("/api/login", {
