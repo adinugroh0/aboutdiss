@@ -47,7 +47,8 @@ export default function LoginPage() {
           <h1 className="text-2xl font-bold text-center">Haii tiaaa</h1>
           <input
             type="text"
-            placeholder="Masukkan nama"
+            placeholder="Siapa aku ?
+          "
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
