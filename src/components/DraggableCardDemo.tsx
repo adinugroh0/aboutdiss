@@ -31,7 +31,9 @@ export function DraggableCardDemo() {
   return (
     <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip">
       <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
-        Web sedang dalam proses mungkin butuh waktu lama karena .....
+        Sebenarnya aku tidak nyaman seperti ini , aku juga tidak bisa memaksa
+        untuk bisa seperti dulu terus tapi aku masih menggu agar seperti dulu
+        lagi.
       </p>
       {items.map((item, index) => (
         <DraggableCardBody key={index} className={item.className}>

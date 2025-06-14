@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     if (error) {
       console.error("Supabase Error:", error.message);
       return NextResponse.json(
-        { message: "Gagal menyimpan ke database" },
+        { message: "Periksa jaringan anda!!!" },
         { status: 500 }
       );
     }
