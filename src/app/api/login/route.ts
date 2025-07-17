@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     // Kirim pesan ke WhatsApp
     const phone = process.env.WA_PHONE!;
     const apikey = process.env.WA_API_KEY!;
-    const message = `🔔 Ada yang login dengan nama: ${name}`;
+    const message = `🔔 Web sedang di perbaiki ${name}`;
     const url = `https://api.callmebot.com/whatsapp.php?phone=${phone}&text=${encodeURIComponent(
       message
     )}&apikey=${apikey}`;

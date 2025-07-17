@@ -31,9 +31,9 @@ export function DraggableCardDemo() {
   return (
     <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip">
       <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
-        Sebenarnya aku tidak nyaman seperti ini , aku juga tidak bisa memaksa
-        untuk bisa seperti dulu terus tapi aku masih menunggu agar seperti dulu
-        lagi.
+        Aku tau semuanya bukan soal percintaan tapi apa bisa kita membohongi
+        perasaan kita sendiri? ada beberapa hal yang awalnya aku tidak begitu
+        suka dan menjadi suka karena kamu.
       </p>
       {items.map((item, index) => (
         <DraggableCardBody key={index} className={item.className}>
