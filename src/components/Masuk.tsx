@@ -117,9 +117,7 @@ export function Masuk() {
 }
 
 const Navbar = () => {
-  return (
-    <nav className="flex w-full h-screen items-center justify-between "></nav>
-  );
+  return <nav className="flex w-full  items-center justify-between "></nav>;
 };
 
 export default Masuk;
