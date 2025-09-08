@@ -1,6 +1,6 @@
 import { TextRevealDemo } from "@/components/TextRevealDemo";
-import HeroVideoDialogDemo from "../components/HeroVideoDialogDemo";
-import Sambutan from "../components/Sambutan";
+import HeroVideoDialogDemo from "@/components/HeroVideoDialogDemo";
+import Sambutan from "@/components/Sambutan";
 import Image from "next/image";
 import { HeroScrollDemo } from "@/components/HeroScrollDemo";
 import { FocusCardsDemo } from "@/components/FocusCardsDemo";
@@ -23,14 +23,39 @@ import AAA from "@/components/AAA";
 import Chepter2 from "@/components/Chepter2";
 import Bukanmalu from "@/components/Bukanmalu";
 import Kembali from "@/components/Kembali";
-import Masuk from "@/components/Masuk";
+import { DraggableCardDemo } from "@/components/DraggableCardDemo";
 
 export default function Home() {
   return (
     <main
       className="bg-black
     ">
-      <Masuk />
+      <Kembali />
+      <Sambutan />
+      <HeroVideoDialogDemo />
+      <TextRevealDemo />
+      <HeroScrollDemo />
+      <FocusCardsDemo />
+      <InfiniteMovingCardsDemo />
+      <SVGMaskEffectDemo />
+      <BoxRevealDemo />
+      <CardStackDemo />
+      <Iklas />
+      <Create />
+      <NewsList />
+      <HyperTextDemo />
+      <Vidio2 />
+      <p className=" flex text-white justify-center items-center">
+        {" "}
+        klik untuk membuaka ucapan
+      </p>
+      <AAA />
+      <AnimatedTestimonialsDemo />
+      <Ucapankedua />
+      <Chepter2 />
+
+      <Bukanmalu />
+      <DraggableCardDemo />
     </main>
   );
 }
