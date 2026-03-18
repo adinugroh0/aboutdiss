@@ -23,6 +23,7 @@ import AAA from "@/components/AAA";
 import Chepter2 from "@/components/Chepter2";
 import Bukanmalu from "@/components/Bukanmalu";
 import Kembali from "@/components/Kembali";
+import Countdown from "@/components/countdown";
 import { DraggableCardDemo } from "@/components/DraggableCardDemo";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
     <main
       className="bg-black
     ">
+      <Countdown />
       <Kembali />
       <Sambutan />
       <HeroVideoDialogDemo />
