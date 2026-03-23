@@ -39,6 +39,7 @@ export default function CountdownPage() {
 
   return (
     <div className="flex items-center justify-center min-h-screen text-white">
+      <h1> web ini masih dalam proses perbaikan 😊</h1>
       <div className="text-center">
         {timeLeft ? (
           <div className="flex gap-4 text-2xl">
@@ -48,7 +49,10 @@ export default function CountdownPage() {
             <TimeBox label="Detik" value={timeLeft.seconds} />
           </div>
         ) : (
-          <p className="text-xl">Waktu sudah habis!</p>
+          <p className="text-xl">
+            Waktu sudah habis , Selamat ulang tahun tiaaa ,maaf ya sudah
+            menggagu kamu terus😊, web ini masih dalam proses ya hehehe
+          </p>
         )}
       </div>
     </div>
